@@ -12,20 +12,21 @@
 ### Follow these Steps:
    1. Open your terminal and create accounts for the two nodes neccesary. We will use datadir and geth for these.
       
-      code: $   ./geth account new --datadir hwmnode1 
+          code: $   ./geth account new --datadir hwmnode1 
       
-      * this will create a new account for node1 and it is named in this case hmwnode1. It will also ask you for a password just click enter,
-      * it will also show a set of private and public keys which NEED to be saved somewhere as you will need them later on.
+          * this will create a new account for node1 and it is named in this case hmwnode1. It will also ask you for a password just click enter
+      
+          * it will also show a set of private and public keys which NEED to be saved somewhere as you will need them later on.
       
    2.  Now we will create the account for the second node
    
-      code: $   ./geth account new --datadir hwmnode2 
+           code: $   ./geth account new --datadir hwmnode2 
       
-      * again type enter when it asks for a password and save both public and private keys for your second node.
+           * again type enter when it asks for a password and save both public and private keys for your second node.
       
    3. After we have both accounts we will now run puppeth and name our network
    
-      code: $ ./puppeth  (this will show a Welcome on your terminal and ask you to name your network)
+            $ ./puppeth  (this will show a Welcome on your terminal and ask you to name your network)
             $ houstontx  (the name used on example) and enter
             $ 2          (configure new genesis block)
             $ 1          (we chose 1 because we will start it from scratch)
@@ -59,24 +60,24 @@
    
 ## Now create a Custom Network in my Crypto 
 
-  1. Open MyCrypto that we downloaded and on the left it says Change Network 
-  2. Click and scroll down to see custom newtork
+    1. Open MyCrypto that we downloaded and on the left it says Change Network 
+    2. Click and scroll down to see custom newtork
   
   It will ask you for
   
-  3. NodeName: houstontx (same name as at the beginnig when doing puppeth)
-  4. Network: Custom
-  5. NetworkName: houstontx 
-  6. Currency: ETH
-  7. ChainID: 1998 (this is the number that was saved when doing puppeth that was explicitly said to save)
-  8. URL: there is a default copy that default but replace the https with http
-  9. Save and Use Custom Node
+    3. NodeName: houstontx (same name as at the beginnig when doing puppeth)
+    4. Network: Custom
+    5. NetworkName: houstontx 
+    6. Currency: ETH
+    7. ChainID: 1998 (this is the number that was saved when doing puppeth that was explicitly said to save)
+    8. URL: there is a default copy that default but replace the https with http
+    9. Save and Use Custom Node
   
 ## Now to send a transaction
 
-  1. Upload the hmwnode1/keystore file that was saved under hmwnode1 as this will have the private key to log in to the wallet in MyCrypto
-  2. Once logged in on send to: copy the public adress of hwmnode2 and send whatever you amount you want 
-  3. If it worked you should see a Transaction Succesful message or you could check status on TX Status on the left hand side bar.
+    1. Upload the hmwnode1/keystore file that was saved under hmwnode1 as this will have the private key to log in to the wallet in MyCrypto
+    2. Once logged in on send to: copy the public adress of hwmnode2 and send whatever you amount you want 
+    3. If it worked you should see a Transaction Succesful message or you could check status on TX Status on the left hand side bar.
   
 ## Celebrate, you just created a blockchain and sent a transaction!
 
